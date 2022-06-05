@@ -1,0 +1,518 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "bootstrap/bootstrap";
+@import "spinner";
+@import "utils";
+@import "rtl";
+@import "responsive";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@media print {
+    .breadcrumb {
+        display: none !important;
+    }
+}
+
+body {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    font-weight: 400 !important;
+    //opacity: 0.8 !important;
+}
+
+.mrgnTP {
+    margin-top: -12px
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #689fcb;
+    color: white;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.dropdownItem {
+    float: left;
+    overflow: hidden;
+    color: white;
+    background-color: #3e474f;
+    border: solid 1px #3e474f;
+}
+
+.dropdownItem .a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.dropdownItem .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: 13px;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    color: white !important;
+    background-color: #1890ff; //new
+}
+
+.dropdownItem:hover .dropdown-content {
+    display: block;
+}
+
+.dropdownItem .dropdown-content {
+    display: none;
+}
+
+.fieldheight {
+    height: 28px !important;
+}
+
+form-content1 {
+    padding: 20px 0;
+}
+
+.btn_1 {
+    color: white;
+    //-color:#3e474f;
+    border-radius: 5px;
+    background-color: #1890ff !important;
+    border: solid 1px #1890ff;
+    height: 35px;
+    width: 100px;
+}
+
+.btn_1:hover {
+    color: white;
+    background-color: #46a4fc !important;
+    border: solid 1px #46a4fc;
+    height: 35px;
+    width: 100px;
+}
+
+.btn_2 {
+    color: white;
+    //-color:#3e474f;
+    margin-left: 250px;
+    background-color: #1890ff !important;
+    border: solid 1px #1890ff;
+    height: 40px;
+    width: 100px;
+}
+
+.btn_2:hover {
+    color: white;
+    background-color: #46a4fc !important;
+    border: solid 1px #46a4fc;
+    height: 40px;
+    width: 100px;
+}
+
+.btn_psradd {
+    color: white;
+    //-color:#3e474f;
+    background-color: #1890ff !important;
+    border: solid 1px #1890ff;
+    height: 30px;
+    width: 68px;
+}
+
+.btn_psradd:hover {
+    color: white;
+    background-color: #46a4fc !important;
+    border: solid 1px #46a4fc;
+    height: 30px;
+    width: 68px;
+}
+
+.btn_psradd1 {
+    color: white;
+    //-color:#3e474f;
+    background-color: #1890ff !important;
+    border: solid 1px #1890ff;
+    height: 30px;
+    width: 30px;
+}
+
+.btn_psradd1:hover {
+    color: white;
+    background-color: #46a4fc !important;
+    border: solid 1px #46a4fc;
+    height: 30px;
+    width: 30px;
+}
+
+.addbtn_1 {
+    color: white;
+    background-color: #46a4fc !important;
+    border: solid 1px #46a4fc;
+    height: 30px;
+    width: 80px;
+}
+
+.btn_margin {
+    margin-top: 15px !important;
+}
+
+.margin-left-5 {
+    margin-left: 5px;
+}
+
+.topnav a:hover {
+    color: #ddd;
+}
+
+.topnav a.active {
+    background-color: #1890ff; //new
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 0.5rem !important;
+}
+
+.form-control {
+    font-size: 12px !important;
+}
+
+// button:hover{
+//     box-shadow: 1px 1px 2px 2px;
+//   }
+//   .closeBtn:hover{
+//     box-shadow: 1px 1px 2px 2px;
+// } 
+.nav-tabs .nav-link {
+    border: 1px solid #e1e3e1 !important;
+    color: #000 !important;
+    //background-color:#3e474f !important;
+    font-style: normal !important;
+    font-family: "Roboto", sans-serif;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: #fff !important;
+    background-color: #1890ff !important; // rgba(47,138,207,1);
+    border: 1px solid #1890ff !important;
+    // font-style: normal !important;
+    //  font-weight: 300 !important;
+    font-family: "Roboto", sans-serif;
+    //#605ca8;
+}
+
+.customSpinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background-color: rgba(130, 130, 130, 0.5) !important;
+}
+
+.customSpinner div {
+    margin-left: 45%;
+    margin-top: 15%;
+    width: 100%;
+    height: 25%;
+    background-image: url(../assets/images/spinner_brand.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+}
+
+.status-red {
+    color: red;
+}
+
+.status-blue {
+    color: blue;
+}
+
+.status-green {
+    color: green($color: #000000);
+}
+
+.ag-theme-balham .ag-floating-filter-button button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    height: 16px;
+    padding: 0;
+    width: 16px;
+    margin-bottom: 8px;
+}
+
+.ag-theme-balham .ag-header {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #BDC3C7;
+}
+
+.form-control {
+    outline: 0 !important;
+    border-width: 0 0 1px !important;
+    border-color: #dfe8ef !important;
+    border-radius: 0 !important;
+}
+
+.form-control:disabled {
+    // opacity: .8!important;
+    background: #f7f5f5 !important;
+    // border:solid 1px #880000;
+    // background-color:#000000;
+    // color:#880000;
+}
+
+.form-control:focus {
+    border-color: #689fcb !important
+}
+
+input[type="date"]::-webkit-inner-spin-button // input[type="date"]::-webkit-calendar-picker-indicator 
+{
+    display: none;
+    -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button // input[type="date"]::-webkit-calendar-picker-indicator 
+{
+    display: none;
+    -webkit-appearance: none;
+}
+
+.form-control:hover {
+    border-color: #689fcb !important
+}
+
+.bg {
+    min-height: 100%;
+    // min-width: 1024px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+//For Checkbox
+.container {
+    max-width: 640px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+ul.ks-cboxtags {
+    list-style: none;
+    padding: 10px;
+}
+
+ul.ks-cboxtags li label:hover {
+    border: 2px solid #67b3fa;
+}
+
+ul.ks-cboxtags li {
+    display: inline;
+}
+
+ul.ks-cboxtags li label {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid rgba(139, 139, 139, 0.3);
+    color: #adadad;
+    border-radius: 25px;
+    white-space: nowrap;
+    margin: 3px 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .2s;
+    height: 42px;
+    width: 184.66px;
+}
+
+ul.ks-cboxtags li label {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+ul.ks-cboxtags li label::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    padding: 2px 6px 2px 2px;
+    content: "\f067";
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked+label::before {
+    content: "\f00c";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked+label {
+    border: 2px solid #1890ff;
+    background-color: #1890ff;
+    color: #fff;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+    display: absolute;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:focus+label {
+    border: 2px solid #1890ff;
+    ;
+}
+
+//End of checkbox
+// Rating Css
+.rating-list ul {
+    width: 70%;
+    margin: auto;
+}
+
+.rating-list li {
+    float: right;
+    color: #ddd;
+    padding: 10px 15px;
+}
+
+.rating-list li:hover,
+.rating-list li:hover~li {
+    color: #393e46;
+}
+
+.rating-list {
+    display: inline-block;
+    list-style: none;
+}
+
+.btn_rating {
+    float: right;
+    border: none;
+    background-color: white;
+}
+
+.btn_close_rating {
+    float: right;
+}
+
+.rating_h5 {
+    text-align: center;
+}
+
+.rlist-inline {
+    padding-left: 9px;
+    list-style: none;
+}
+
+// End of Rating
+@media screen and (max-width: 1024px) {
+    /* Specific to this particular image */
+    img.bg {
+        left: 50%;
+        margin-left: -512px;
+        /* 50% */
+    }
+}
+
+.modal-contents {
+    background-color: rgba(0, 0, 0, .0001) !important;
+    border: none !important;
+}
+
+.modal-open .modal {
+    z-index: 10000;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.ttip .ttiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.ttip .ttiptext::after {
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.ttip:hover .ttiptext {
+    visibility: visible;
+    opacity: 1;
+}
